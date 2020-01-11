@@ -1,0 +1,302 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a:link {
+    color: #221F1F;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a:hover {
+    color: #CC1122;
+}
+
+.nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
+    background-color: #333;
+}
+
+    .nav li {
+        display: inline;
+    }
+        .nav li a {
+            color: white;
+
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+    .nav li a:hover:not(.active) {
+    background-color: #111;
+
+    }
+
+    .nav a {
+        display: inline-block;
+        padding: 10px;
+    }
+.active {
+    background-color: #4CAF50;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+    .dropdown .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+    }
+
+    .navbar a:hover, .dropdown:hover .dropbtn {
+        background-color: #CC1122;
+    }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+    .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    }
+
+
+.dashboardForms {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 6px;
+}
+
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    text-align: center;
+    display: inline-block;
+    margin: auto;
+}
+
+.form-popup {
+    display: none;
+    max-width: 600px;
+    text-align: center;
+    border: 3px solid #f1f1f1;
+    margin:auto;
+    z-index: 9;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+    margin:inherit;
+}
+
+    .form-container input[type=text] {
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        border: none;
+        background: #f1f1f1;
+    }
+
+    .form-container input[type=text]:focus {
+        background-color: #ddd;
+        outline: none;
+    }
+
+    .form-container .cancel {
+        background-color: red;
+    }
+
+    .form-container .btn:hover, .open-button:hover {
+        opacity: 1;
+    }
+    .form-title{
+        text-align: left;
+        font-weight: bold;
+        font-size:medium;
+    }
+
+body, html {
+    height: 50%;
+    margin: 0;
+}
+
+.about-bg {
+    /* The image used */
+    background-image: url("https://i.ytimg.com/vi/0cZMZ0YWduU/maxresdefault.jpg");
+    /* Full height */
+    height: 500%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.careers-bg {
+    /* The image used */
+    background-image: url("https://assets.biola.edu/4396738754672012438/attachment/5775b18a75b061173bf3ea71/CareerRoadmap3.jpg");
+    /* Full height */
+    height: 400%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.courses-bg {
+    /* The image used */
+    background-image: url("https://www.spinitar.com/wp-content/uploads/bfi_thumb/df2d5729722c93a94bd59642aec442fb-xlarge-nwep9asq9oai8tagk6g6u1lgh8aet451w88gwqo48c.jpg");
+    /* Full height */
+    height: 400%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.StudentHub-bg {
+    /* The image used */
+    background-image: url("http://scriptoriumdaily.com/wp-content/uploads/2014/04/biolaucm_18080565304.jpg");
+    /* Full height */
+    height: 450%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.careers-container {
+    position: relative;
+    display:block;
+    padding-top: 10%;
+    font-family: 'Ubuntu';
+}
+
+.text-block {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: #CC1122;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.footer1 {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: gray;
+    color: white;
+    text-align: center;
+}
+
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    height:50px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.button {
+    background-color: #CC1122;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.jobtext{
+    min-width: 20%;
+    padding:11px;
+    display: inline-block;
+}
+
+.coursetext{
+    display:inline-block;
+    text-align:left;
+    padding-top:10%;
+}
+
+.abouttext {
+    display: inline-block;
+    text-align: left;
+    padding-top: 10%;
+}
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1170px;
+    text-align: center;
+}
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+    .flexContainer div img {
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+.relative {
+    position: relative;
+    width: 100%;
+    height: auto;
+}

@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+
+$(function(){
+  $("#header").load("header.html");
+  $("#footer").load("footer.html");
+});
+    </script>
+</head>
+<body>
+    <div id="header"></div>
+
+    <div class="relative">
+        <img src="https://assets.biola.edu/4396738754672012438/attachment/5775b18a75b061173bf3ea71/CareerRoadmap3.jpg" alt="Careerss" style="height: 50%; width: 100%;">
+        <div class="text-block">
+            <h4><font size="5px">Proverbs 16:3</font></h4>
+            <p><font size="5px">Commit your works to the LORD and your plans will be established.</font></p>
+        </div>
+    </div>
+
+    <div class="careers-container">
+        <h1 style="text-align:center">Jobs and Careers</h1>
+
+        <h3 style="text-align:center">Internship Opportunities:</h3>
+
+        <div class="container">
+            <div class="flexContainer even">
+                <div class="jobtext">
+                    <a href="https://faithlife.com/devinterns" target="_blank">
+                        <img src="images/faithlife.png"
+                             alt="FaithlifeLogo">
+                        <h4>Faithlife Development Internships</h4>
+                    </a>
+                </div>
+                <div class="jobtext">
+                    <a href="https://careers.google.com/students/" target="_blank">
+                        <img src="images/googleicon.jpg"
+                             alt="GoogleLogo">
+                        <h4>Google Jobs and Internships</h4>
+                    </a>
+                </div>
+                <div class="jobtext">
+                    <a href="https://www.riotgames.com/en/university-programs" target="_blank">
+                        <img src="images/riotgames.jpg"
+                             alt="RiotLogo">
+                        <h4>Riot Games Internships</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <h3 style="text-align:center">Job Opportunities:</h3>
+
+        <div class="container">
+            <div class="flexContainer even">
+                <div class="jobtext">
+                    <a href="https://www.liferay.com/careers" target="_blank">
+                        <img src="images/liferay.png"
+                             alt="LiferayLogo">
+                        <h4>Liferay Careers</h4>
+                    </a>
+                </div>
+                <div class="jobtext">
+                    <a href="https://careers.microsoft.com/us/en" target="_blank">
+                        <img src="images/microsoft.png"
+                             alt="MicrosoftLogo">
+                        <h4>Microsoft Careers</h4>
+                    </a>
+                </div>
+                <div class="jobtext">
+                    <a href="https://www.intel.com/content/www/us/en/jobs/locations/united-states.html" target="_blank">
+                        <img src="images/intel.png"
+                             alt="IntelLogo">
+                        <h4>Intel Careers</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="width:800px; margin:0 auto;[B]padding:20px 0;[/B]">
+        <h1>Internships</h1>
+        <table border="1">
+            <?php include 'readInternships.php'; ?>
+        </table>
+    </div>
+    <div style="width:800px; margin:0 auto;[B]padding:20px 0;[/B]">
+        <h1>Part-Time Positions</h1>
+        <table border="1">
+            <?php include 'readParttime.php'; ?>
+        </table>
+    </div>
+    <div style="width:800px; margin:0 auto;[B]padding:20px 0;[/B]">
+        <h1>Full-Time Positions</h1>
+        <table border="1">
+            <?php include 'readFulltime.php'; ?>
+        </table>
+    </div>
+    <div style="width:800px; margin:0 auto;[B]padding:20px 0;[/B]">
+        <h1>Contractor Positions</h1>
+        <table border="1">
+            <?php include 'readContractors.php'; ?>
+        </table>
+    </div>
+    <div id="footer"></div>
+</body>
+</html>

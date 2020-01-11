@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+</head>
+<body>
+    <div id="header"></div>
+
+    <div class="relative">
+        <img src="https://www.spinitar.com/wp-content/uploads/bfi_thumb/df2d5729722c93a94bd59642aec442fb-xlarge-nwep9asq9oai8tagk6g6u1lgh8aet451w88gwqo48c.jpg" alt="Nature" style="width:100%; height: 50%;">
+        <div class="text-block">
+            <h4><font size="5px">Colossians 3:23</font></h4>
+            <p><font size="5px">Whatever you do, work heartily, as for the Lord and not for men.</font></p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="coursetext">
+            <h1>Courses</h1>
+            <p>
+                The Computer Science program at Biola endeavors to equip the students with solid foundational knowledge and skills in computer science and a holistic integration of faith and learning into their perspective of computer science. A Bachelor of Science of degree in Computer Science is offered upon completion of university baccalaureate and the computer science major in one of the two concentrations: the Computer Science concentration (53 units) and the Information Systems concentration (57 units). A Computer Science Minor is offered upon the completion of 21 required units.
+            </p>
+            <h1>Find out more about our course requirements here:</h1>
+
+            <a href="http://catalog.biola.edu/biola-university-undergraduate/majors/computer-science-bs/?_ga=1.192290346.1692027138.1412293019#requirementstext"
+               target="_blank"><h2><u>C.S. Curriculum Requirements</u></h2></a>
+
+            <h1>Course List:</h1>
+
+            <table border="1">
+                <?php include 'readCourses.php'; ?>
+            </table>
+            
+
+
+        </div>
+    </div>
+    <div id="footer"></div>
+</body>
+</html>
